@@ -119,3 +119,72 @@ for person in people:
     city = person['city'].title()
     print(f"{name}, of {city}, is {age} years old.")
 
+print('--------')
+pets = []
+pet = {
+    'animal type': 'python',
+    'name': 'john',
+    'owener': 'guido',
+    'weight': 43,
+    'eats': 'bugs',
+    }
+pets.append(pet)
+pet = {
+    'animal type': 'dog',
+    'name': 'peso',
+    'owener': 'eric',
+    'weight': 37,
+    'eats': 'shoes',
+    }
+pets.append(pet)
+for pet in pets:
+    print(f"\nHere's what I know about {pet['name'].title()}:")
+    for key, value in pet.items():
+        print(f"\t{key}: {value}")
+print('--------')
+favorite_places = {
+    'leo': ['the Himalayas', 'Mongolia', 'Spain'],
+    'soris': ['hawaii', 'iceland'],
+    'jack': ['Germany', 'Switzerland', 'Mexico'],
+}
+for name, places in favorite_places.items():
+    print(f"\n{name.title()} likes the following places:")
+    for place in places:
+        print(f"- {place.title()}")
+print('--------')
+favorite_numbers = {
+    'leo': [42, 17],
+    'soris': [42, 39, 56],
+    'jack': [7, 12],
+    }
+
+for name, numbers in favorite_numbers.items():
+    print(f"\n{name.title()} likes the following numbers:")
+    for number in numbers:
+        print(f" {number}")
+print('--------')
+cites = {
+    'santiago': {
+        'country': 'chile',
+        'population': 6310000,
+        'nearby mountains': 'andes',
+        },
+    'talkeetna': {
+        'country': 'united states',
+        'population': 876,
+        'nearby mountains': 'alaska range',
+        },
+    'kathmandu': {
+        'country': 'nepal',
+        'population': 975453,
+        'nearby mountains': 'himilaya',
+        }
+}
+for city, city_info in cites.items():
+    country = city_info['country'].title()
+    population = city_info['population']
+    mountains = city_info['nearby mountains'].title()
+    print(f"\n{city.title()} is in {country}.")
+    print(f"\tIt has a population of about {population}.")
+    print(f"\tThe {mountains} mounats are nearby.")
+
