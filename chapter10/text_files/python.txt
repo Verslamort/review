@@ -1,0 +1,2 @@
+In Python you can write program.
+In Python you can read program.
